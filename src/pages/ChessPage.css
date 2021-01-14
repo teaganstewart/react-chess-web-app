@@ -1,0 +1,34 @@
+ion-content.background{
+    --background: url(../theme/assets/marble.jfif) 0 0/100% 100% no-repeat;
+}
+
+ion-card.chess-card {
+    background-color: white;
+    padding: 30px;
+    height: 630px;
+    opacity: 1;
+    box-shadow: 2px 2px 4px pink;
+}
+ion-card.options-card {
+    background-color: black;
+    padding: 30px;
+    height: 630px;
+    opacity: 0.65;
+    box-shadow: 2px 2px 4px pink;
+}
+
+ion-grid.chess-grid {
+    height: auto;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    ion-card.options-card {
+        height: 250px;
+    }
+
+}
+
+@media (min-width: 768px) {
+   
+}
