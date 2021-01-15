@@ -1,34 +1,89 @@
 ion-content.background{
     --background: url(../theme/assets/marble.jfif) 0 0/100% 100% no-repeat;
+    padding-right: 30px;
 }
 
 ion-card.chess-card {
     background-color: white;
-    padding: 30px;
     height: 630px;
-    opacity: 1;
+
+    padding: 2px;
     box-shadow: 2px 2px 4px pink;
 }
 ion-card.options-card {
     background-color: black;
     padding: 30px;
-    height: 630px;
+    height: 600px;
     opacity: 0.65;
     box-shadow: 2px 2px 4px pink;
 }
 
 ion-grid.chess-grid {
     height: auto;
-    margin-top: 5px;
+    width: 91%;
+    margin-top: 15px;
+    margin-left: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 645px) {
     ion-card.options-card {
-        height: 250px;
+        height: 180px;
+    }
+
+    ion-card.chess-card {
+        margin-left: 10px;
+        height: auto;
+        width: auto;
+        align-content: center;
+        align-items: center;
     }
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+    ion-card.options-card {
+        height: 526px;
+        margin-left: -10px;
+    }
+
+}
+
+
+@media (min-width: 1102px) {
+    ion-card.options-card {
+        height: 526px;
+        margin-left: -100px;
+    }
+    ion-grid.chess-grid {
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    ion-card.options-card {
+        height: 526px;
+        margin-left: 40px;
+        
+    }
+}
+
+@media (min-width: 645px) {
+    ion-grid.chess-grid {
+        padding: 1px;
+        width: 88%;
+        margin-top: 5%;
+    }
+    ion-card.chess-card {
+        margin-left: 10px;
+        height: 526px;
+        width: 526px;
+        align-content: center;
+        align-items: center;
+    }
+
+    ion-card.options-card {
+        width: 526px;
+    }
    
 }

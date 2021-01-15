@@ -39,7 +39,7 @@ const App: React.FC = () => (
         {/* this is where I add pages. */}
         <Route path="/chess" component={ChessPage} exact={true} title="Chess"/>
         {/* Default routing. */}
-        <Route path="/" render={() => <Redirect to="/ChessPage" />} exact={true} />
+        <Route path="/" render={() => <Redirect to="/chess" />} exact={true} />
       </IonRouterOutlet>
 
     </IonReactRouter>
